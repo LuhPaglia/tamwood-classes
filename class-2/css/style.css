@@ -91,7 +91,7 @@ blockquote{
     line-height: 2;
 }
 
-blockquote > a{
+blockquote > a, blockquote a{
     color: forestgreen;
 }
 
