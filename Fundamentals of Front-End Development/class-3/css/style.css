@@ -8,6 +8,7 @@ body{
     background-color: #bed0ae;
     padding-left: 10%;
     padding-right: 10%;
+    line-height: 1.5;
 }
 
 main{
@@ -41,7 +42,66 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 600;
+    padding: 10%;
+    width: 100%;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: beige;
+    color: black;
+}
+
+main > section{
+    display: flex;
+    padding-bottom: 2%;
+}
+
+section > article{
+    padding-top: 2%;
+}
+
+section > article:first-child p{
+    padding: 2% 0 2% 0;
+}
+section > article:first-child ul{
+    padding-left: 25%;
+}
+section > article:last-child{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+}
+
+
+section h3{
+    color: darkslategray;
+}
+
+article > aside{
+    border: 1px dashed black;
     padding: 5%;
+    text-align: justify;
+}
+
+aside > p{
+    padding-bottom: 5%;
+    padding-top: 5%;
+    line-height: 1.5;
+}
+
+aside ul{
+    padding-left: 20%;
+}
+
+aside li{
+    list-style-type: square;
+    font-size: 14px;
+    padding-bottom: 2%;
+}
+
+aside a{
+    text-transform: capitalize;
 }
 
 footer{
@@ -55,3 +115,15 @@ footer{
 a{
     color: darkcyan;
 }
+
+time{
+    font-weight: 600;
+    color: darkslategrey
+}
+
+p{
+    text-align: justify;
+    width: 95%;
+    line-height: 1.5;
+}
+
