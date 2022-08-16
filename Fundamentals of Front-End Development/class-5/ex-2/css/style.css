@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+nav > figure{
+    display: flex;
+    align-items: center;
+    column-gap: 2vh;
+    color: deepskyblue;
+    font-size: 22px;
+}
+
+nav img{
+    width: 7vh;
+    height: 7vh;
+}
+
+nav > ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: dimgray;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom:3px solid  white;
+}
+
+nav a:hover{
+    border-color:deepskyblue;
+}
+
+header > section{
+    background-image: url("../gallery/landscape.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    width: 30%;
+}
+
+input{
+    padding: 2%;
+    border: 0px none transparent;
+}
+
+time{
+    color: darkgray;
+}
+
+span{
+    color: gray;
+}
+
+[type="search"]{
+    width: 70%;
+}
+
+[type="submit"]{
+    width: 25%;
+    background-color: teal;
+    color: white;
+    font-weight: 600;
+}
+
+::placeholder{
+    color: teal;
+}
+
+main img{
+    width: 40vh;
+    height: 20vh;
+}
+
+main h2{
+    color: deepskyblue;
+    padding: 2%;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 6vh;
+    row-gap: 3vh;
+}
+
+.gallery figcaption{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    padding-top: 3%;
+}
+

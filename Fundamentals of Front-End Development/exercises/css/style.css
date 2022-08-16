@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url("../img/fruits.jpeg");
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+header h1{
+    font-size: 48px;
+}
+header h3{
+    font-size: 26px;
+}
+
+nav{
+    background-color: orange;
+}
+
+nav > ul{
+    display: flex;
+    width: 70%;
+}
+
+nav li{
+    width: 100%;
+    display: flex;
+    border: 0.5px solid white;
+}
+
+nav a{
+    color: bisque;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5%;
+    width: 100%;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: beige;
+    color: black;
+}
+
+section{
+    display: flex;
+}
+
+
+footer{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+	text-align: justify;
+	text-transform: capitalize;
+}
+
+a{
+	color: dodgerblue;
+}
+
+.right{
+	background-color: beige;
+	width: 60%;
+}
+
+.right > aside:nth-child(1), .right > aside:nth-child(2){
+	margin: 3%;
+	padding: 3%;
+	background-color:cadetblue;
+}
+
+.right h3{
+	padding-bottom: 2%;
+}
+
+.right > aside:nth-child(3){
+	margin: 5%;
+}
+
+.right ul{
+	padding-left: 20%;
+}
+
+.right li{
+    list-style-type: none;
+    padding-bottom: 2%;
+}
+
+.right p{
+	padding-top: 5%;
+}
+
+.left p{
+	padding-top: 2%;
+}
+
+.left > aside{
+	padding: 3%;
+}
+
+
+.left > aside:last-child{
+	background-color: brown;
+	color: white;
+	margin: 2%;
+}
+
+.left ul{
+	padding-top: 3%;
+	padding-left: 10%;
+}
+
+.left li{
+    list-style-type: square;
+    padding-bottom: 2%;
+}
+
