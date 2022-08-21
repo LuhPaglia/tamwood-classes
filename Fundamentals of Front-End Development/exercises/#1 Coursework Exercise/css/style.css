@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    padding: 0% 3% 0% 3%;
+    background-color: grey;
+}
+
+main{
+    background-color: white;
+    height: 100vh;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+span a{
+}
+
+header{
+    background-image: url("../img/leaf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 25vh;
+    border-bottom: 2px solid green;
+}
+
+header > article{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: .5vh;
+    color: white;
+    padding-left: 8%;
+}
+header h1{
+    text-transform: capitalize;
+    font-size: 36px;
+}
+header h3{
+    font-size: 21px;
+}
+
+section{
+    display: flex;
+}
+
+nav {
+    background-color: green;
+    text-transform: capitalize;
+    height: 29vh;
+    border: 2px solid gray;
+    width: 90%;
+    margin: 5%;
+}
+nav > ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+}
+ 
+nav li {
+    height: 100%;
+    transition: .4s;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    border: 1px solid gray;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav li:hover {
+    background-color: yellowgreen;
+    border-top: 4px solid beige;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: green;
+}
+
+footer{
+    color: white;
+    background-color: green;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.left{
+    background-color: #BBDDBB;
+}
+
+.left h3{
+    color: green;
+    font-size: 18px;
+    padding: 2% 0% 2% 5%;
+}
+
+.left > aside:nth-child(2), .left > aside:nth-child(3){
+    border: 2px solid gray;
+    background-color: #DDF1DD;
+    width: 80%;
+    margin: 0% 10% 5% 10%;
+}
+
+.left > aside:nth-child(2) ul{
+    padding: 5%;
+}
+
+.left > aside:nth-child(2) li{
+    list-style: none;
+    line-height: 1.5;
+}
+
+.left > aside:nth-child(2) a{
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.left > aside:nth-child(2) a:hover{
+    text-decoration: underline;
+    color: green;
+}
+
+.left > aside:nth-child(3) p{
+    text-align: justify;
+    color: green;
+    line-height: 1.5;
+    padding: 5%;
+}
+
+.left > aside:nth-child(4) h3{
+    color: black;
+}
+
+.left > aside:nth-child(4) a{
+    display: flex;
+    padding-left: 5%;
+    color: black;
+    text-decoration: none;
+}
+
+.left > aside:nth-child(4) > article:first-child{
+    padding-bottom: 10%;
+}
+
+.left > aside:nth-child(4) p{
+    text-align: justify;
+    line-height: 1.5;
+    padding:  0% 5% 5% 5%;
+}
+
+.right{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.right p{
+    padding: 1%;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.right h2{
+    padding: 2%;
+    color: green;
+}
+
+aside > figure {
+    float: right;
+    margin: 1%;
+}
+ 
+figure > img {
+    width: 28vh;
+    height: 35vh;
+    border: 1px solid gray;
+}
+
+.right > aside:nth-child(3),.right > aside:nth-child(4),.right > aside:nth-child(5){
+    background-color: #DCE6E4;
+    border: 1px solid gray;
+    margin: 1.5%;
+    padding: 1%;
+    color:dimgray;
+}
