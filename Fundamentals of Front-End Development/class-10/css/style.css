@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: darkorange;
+    padding: 0% 2% 0% 2%;
+}
+
+main{
+    background-color: dimgray;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    background-image: url("../img/h-flower.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 30vh;
+}
+
+header h1{
+    background-color: #bc5510;
+    color: #4b2207;
+    padding: 1%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+
+nav{
+    width: 100%;
+    background-color: #bc5510;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+nav ul{
+    width: 80%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav a{
+    color: #4b2207;
+    letter-spacing: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: yellow;
+}
+
+fieldset{
+    width: 70%;
+    padding: 2%;
+}
+
+legend{
+    font-size: 12px;
+    color: dimgray;
+}
+
+label{
+    font-size: 14px;
+    color: dimgray;
+}
+
+h2 > span{
+    color: goldenrod;
+}
+
+article > article p{
+    padding-top: 5%;
+
+}
+
+article > article p,
+article > article blockquote{
+    line-height: 1.5;
+}
+
+.wrapper{
+    width: 70%;
+    background-color: whitesmoke;
+}
+
+.content{
+    display: flex;
+}
+
+.content h2{
+    text-transform: capitalize;
+    color: dimgray;
+    font-weight: 300;
+}
+
+.left{
+    padding: 2%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+}
+
+.right{
+    padding: 2%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    background-color: white;
+}
+
+.left > ul{
+    list-style-type: square;
+    color: darkorange;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    padding-left: 10%;
+}
+
+.left a{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.left a:hover{
+    color:darkorange;
+    text-decoration: underline;
+}
+
+.right > article:nth-child(2){
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.right > article > blockquote{
+    line-height: 1.5;
+    width: 90%;
+}
+
+.right > article blockquote{
+    padding-left: 0% 5% 5% 5%;
+    color:goldenrod;
+    font-style: italic;
+}
+
+.right > article > p{
+    line-height: 1.5;
+}
+
+blockquote > a{
+    text-decoration: none;
+    color: orange;
+    font-weight: 600;
+}
+
+figure{
+    float: left;
+}
+
+img{
+    width: 15vh;
+    height: 15vh;
+}
+
+aside{
+    border: 1px dashed #8a795d;
+    padding: 1%;
+}
+
+aside > ul{
+    display: flex;
+    column-gap: 5vh;
+}
+
+aside li{
+    display: flex;
+    font-size: 14px;
+}
+
+aside a{
+    color: #bc5510;
+    text-decoration: none;
+}
+
+aside a:hover{
+    color: #8a795d;
+    text-decoration: underline;
+}
+
+time{
+    color: #aaa;
+}
+
+footer{
+    padding: 2%;
+}
+
+footer a{
+    color: #bc5510;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #8a795d;
+    text-decoration: underline;
+}

@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3, h2{
+    color: #885835;
+    text-transform: uppercase;
+    letter-spacing: .5vh;
+}
+
+header{
+    background-color: #EA7026;
+    height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header article{
+    width: 70%;
+    height: 95%;
+    background-image: url("../img/pexels-julia-1327838.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+header h1{
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-transform: capitalize;
+    background-color: rgba(255,140,0, 0.643);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    color: white;
+    background-color: #885835;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    width: 70%;
+
+}
+
+nav li{
+    width: 100%;
+    display: flex;
+    border-right: 0.5px solid white;
+
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    font-size: 14px;
+    transition: .4s;
+}
+
+nav a:hover{
+    background-color: #EA7026;
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFFEF;
+}
+
+main ul{
+    padding: 8% 0% 8% 0%;;
+}
+
+main p{
+    text-align: left;
+    line-height: 3vh;
+}
+
+main > section:last-child{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+
+
+blockquote{
+    color:olive;
+    font-style: italic;
+    font-weight: 600;
+    width: 70%;
+    line-height: 1.5;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+figure{
+    border: 1px solid dimgray;
+    padding: 1%;
+    width: fit-content;
+}
+
+figure img{
+    width: 15vh;
+    height: 10vh;
+}
+
+footer{
+
+    background-color: #EA7026;
+    border-top: 5px solid #885835;
+    color:black;
+}
+footer article{
+    padding: 0.25%;
+}
+
+footer a{
+    color: white;
+}
+
+.left{
+    width: 18%;
+    padding: 2% 3% 0% 3%;
+}
+
+.left > ul{
+    padding-left: 5%;
+}
+
+.left li{
+    list-style: square;
+    color: #885835;
+}
+
+.left li a{
+    color: #885835;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 1%;
+}
+
+.middle{
+    border-right: 2px dotted #EA7026;
+    border-left: 2px dotted #EA7026;    
+    width: 45%;
+    padding: 2% 3% 0% 3%;
+    flex-direction: column;
+}
+
+.middle > article{
+    padding-top: 5%;
+}
+
+
+.middle > article:nth-child(2) h2{
+    padding-bottom: 5%;
+}
+
+aside > figure{
+    float: left;
+    margin-right: 15px;
+}
+
+article > figure{
+    float: right;
+}
+
+.right{
+    width: 18%;
+    padding: 2% 3% 0% 3%;
+}
+
+.right ul{
+    padding-left: 20%;
+}
+
+.right a{
+    text-decoration: none;
+    color:deepskyblue; 
+}
+
+.right h3{
+    padding-bottom: 10%;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+main > section:last-child{
+    height: 15vh;
+    padding-top: 1%;
+}
+
+main > section:last-child form{
+    width: 20%;
+    height: 10vh;
+    padding-right: 2%;
+}
+
+[type="submit"]{
+    width: 40%;
+}
+

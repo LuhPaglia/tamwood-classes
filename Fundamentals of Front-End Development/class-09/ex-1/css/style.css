@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ body{
+     background-color: black;
+     padding: 2% 2% 0% 2%;
+ }
+ 
+ main {
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+ }
+ 
+ main > section {
+    display: flex;
+    column-gap: 5vh;
+    padding-top: 3%;
+    padding-bottom: 3%;
+ }
+ 
+ header {
+    display: flex;
+    column-gap: 5vh;
+    padding-bottom: 5%;
+ }
+ 
+ header > article:first-child {
+    background-image: url("/img/oranges.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 35vh;
+    border: 10px solid white;
+ }
+ 
+ header > article:last-child {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+ }
+ 
+ header aside,
+ header p {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+    width: 60%;
+ }
+ 
+ header time {
+    color: darkorange;
+    font-weight: 600;
+ }
+ 
+ header blockquote {
+    letter-spacing: 2px;
+ }
+ 
+ header h1 {
+    color: navy;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+ }
+
+ nav{
+     background-color: darkorange;
+ }
+
+nav > ul{
+    display: flex;
+    width: 60%;
+}
+
+nav li{
+    width: 100%;
+    display: flex;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    border-right: 1px solid whitesmoke;
+}
+
+nav a:hover{
+    background-color: navy;
+}
+ 
+ h1 > span {
+    color: darkorange;
+ }
+ 
+ figure {
+    display: none;
+ }
+ 
+ footer {
+    background-color: darkorange;
+    color: lightgray;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+ }
+ 
+ footer a {
+    text-decoration: none;
+    color: white;
+ }
+ 
+ footer a:hover {
+    text-decoration: underline;
+ }
+ 
+ main h2 {
+    color: navy;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+ }
+ 
+ h2 > span {
+    color: darkorange;
+ }
+ 
+ p, blockquote {
+    line-height: 1.5;
+ }
+ 
+section blockquote {
+    font-weight: 600;
+    font-style: italic;
+    color: olive;
+    width: 70%;
+}
+ 
+p {
+    color: dimgray;
+}
+ 
+.left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}
+ 
+.left > ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+}
+ 
+.left li {
+    display: flex;
+}
+ 
+.left a {
+    padding: 2%;
+    color: white;
+    font-weight: 600;
+    width: 100%;
+    text-decoration: none;
+    text-transform: capitalize;
+    background-color: darkorange;
+}
+ 
+.left a:hover {
+    background-color: navy;
+}
+ 
+.left p,
+.left h2 {
+    padding-left: 5%;
+    width: 80%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.right ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1vh;
+    padding-left: 20%;
+}
+
+.right li{
+    text-transform: capitalize;
+}
+
+.right a{
+    text-decoration: none;
+    color: darkorange;
+}
+
+.right a:hover{
+    text-decoration: underline;
+    color: navy;
+}
+
+.middle{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 4vh;
+}
+
+.middle h2{
+    width: 100%;
+}
+
+.middle > article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 4vh;
+}
+
+.middle a{
+    color: darkorange;
+    text-decoration: none;
+}
+
+.middle a:hover{
+    color: navy;
+    text-decoration: underline;
+}
+
+.content > section{
+    padding: 2%;
+}
