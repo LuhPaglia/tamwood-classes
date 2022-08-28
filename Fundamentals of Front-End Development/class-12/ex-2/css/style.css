@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(#91703b 30%, #bb9e66 70%);
+    height: 20vh;
+}
+
+h1{
+    font-size: 48px;
+    letter-spacing: 5px;
+    color: white;
+}
+
+header > article:first-child h3{
+    letter-spacing: 5px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+header > article:first-child{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+header > article:last-child{
+    width: 15%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    row-gap: 1vh;
+}
+
+nav{
+    background-image: linear-gradient(#b41914, #c32a24 50%, #b41914 );
+    display: flex;
+    justify-content: center;
+    border-top: 5px solid #e2403b;   
+    border-bottom: 4px solid #ccbba9; 
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+nav li{
+    width: 100%;
+    display: flex;
+}
+
+nav a{
+    width: 100%;
+    color:white;
+    text-decoration: none;
+    padding: 5%;
+    text-align: center;
+    font-weight: 600;
+}
+
+nav a:hover{
+    background-color: #e2403b;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main{
+    border-top: 1px solide #a3925a;
+    display: flex;
+    background-color: #fef9e6;
+    padding: 3% 16% 3% 16%;
+    column-gap: 5vh;
+}
+
+main a{
+    color: #bb241d;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+main li{
+    color: #bb241d;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+main h2{
+    background-color: black;
+    color: white;
+    border-left: 5px solid #bb241d;
+    border-right: 5px solid #bb241d;
+    padding: 5%;
+}
+
+main h3{
+    color: #bb241d;
+}
+
+img{
+    width: 35vh;
+    height: 20vh;
+}
+
+ol{
+    padding-left: 15%;
+}
+
+.left{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5vh;
+    row-gap: 7vh;
+}
+
+.left p{
+    text-align: justify;
+}
+
+.left > article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+}
+
+.left > article:first-child{
+    width: 100%;
+
+}
+.left > article:nth-child(2){
+    width: 55%;
+}
+.left > article:nth-child(3){
+    width: 35%;
+}
+
+.right{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
+    background-color: #e8e8e8;
+}

@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    padding: 2% 5% 2% 5%;
+    background-color: lightgray;
+}
+
+header > section{
+    height: 30vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header article{
+    height: 100%;
+    width: 100%;
+    color: white;
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(50,50,50, 0.5);
+}
+
+header h1{
+    font-size: 36px;
+    letter-spacing: 2vh;
+    text-transform: uppercase;
+}
+
+video{
+    position: absolute;
+    height: 100%;
+    object-fit:fill;
+    width: 100%;
+    z-index: 0;
+}
+
+nav{
+   background-color: dimgray; 
+   display: flex;
+   justify-content: center;
+}
+
+nav ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+nav li{
+    display: flex;
+    width: 100%;
+}
+
+nav a{
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 5%;
+}
+
+nav a:hover{
+    background-color: white;
+    color: dimgray;
+}
+
+footer{
+    text-align: center;
+}
