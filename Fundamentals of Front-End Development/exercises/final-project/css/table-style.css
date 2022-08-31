@@ -6,7 +6,7 @@
 
 header{
     height: 30vh;
-    background-color: darkgrey;
+    background-color: darkgray  ;
     color: white;
     display: flex;
     justify-content: center;
@@ -16,7 +16,7 @@ header{
 }
 
 body{
-    padding: 2% 5% 2% 5%;
+    padding: 1% 5% 0% 5%;
     background-color: lightgray;
 }
 
@@ -50,6 +50,75 @@ nav a:hover{
     color: dimgray;
 }
 
+.selected{
+    background-color: lightgray;
+    color: black;
+}
+
+main{
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+table{
+    border: 2px solid black;
+    width: 100vh;
+    text-align: center;
+}
+
+table a{
+    text-decoration: underline;
+    color: black;
+}
+
+table a:hover{
+    color: purple;
+}
+
+caption{
+    padding-bottom: 2%;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd){
+    background-color: gainsboro;
+}
+
 footer{
     text-align: center;
+    padding: 2%;
+}
+
+.glass{
+    background-color: #a5ca62;
+}
+
+.fire{
+    background-color: #ec833d;
+}
+
+.water{
+    background-color:#588fbf;
+}
+
+.bug{
+    background-color: #7b9e4c;
+}
+
+.normal{
+    background-color: gray;
+}
+
+.psic{
+    background-color: #b082c4;
+}
+
+.eletric{
+    background-color: #EDD433;
 }

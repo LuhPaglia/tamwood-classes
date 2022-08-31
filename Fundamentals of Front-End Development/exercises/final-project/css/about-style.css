@@ -5,7 +5,7 @@
 }
 
 body{
-    padding: 2% 5% 2% 5%;
+    padding: 1% 5% 0% 5%;
     background-color: lightgray;
 }
 
@@ -52,6 +52,58 @@ nav a:hover{
     color: dimgray;
 }
 
+main{
+    background-color: white;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3vh;
+}
+
+main section{
+    width: 80%;
+    border: 2px dotted dimgray;
+    padding: 2%;
+    
+}
+
+img{
+    width: 20vh;
+}
+
+h2{
+    letter-spacing: 1vh;
+    text-transform: capitalize;
+    
+}
+
+figure{
+    float: left;
+    margin: 2%;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vh;
+}
+
+p{
+    line-height: 1.5;
+}
+
 footer{
     text-align: center;
+    padding: 2%;
+}
+
+.selected{
+    background-color: lightgray;
+    color: black;
+}
+
+main section:nth-child(even) figure{
+    float: right;
 }

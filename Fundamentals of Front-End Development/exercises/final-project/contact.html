@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/contact-style.css">
-    <title>Final Project - Table</title>
+    <title>Final Project - Contact</title>
 </head>
 <body>
     <header>
@@ -16,9 +16,46 @@
             <li><a href="./index.html" target="_blank">Home</a></li>
             <li><a href="./about.html" target="_blank">About</a></li>
             <li><a href="./table.html" target="_blank">Table</a></li>
-            <li><a href="./contact.html" target="_blank">Contact</a></li>
+            <li><a href="./contact.html" target="_blank" class="selected">Contact</a></li>
         </ul>
     </nav>
+    <main>
+        <form method="get" action="contact.html">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Phone Number">
+                <label for="date">Date of meeting:</label>
+                <input type="date" id="date">
+                <input type="time" name="" id="">
+                <label for="select">Local:</label>
+                <select id="select">
+                    <optgroup label="Canada">
+                        <option value="beer">Vancouver</option>
+                        <option value="soju">Toronto</option>
+                        <option value="soda">Montreal</option>
+                    </optgroup>
+                    <optgroup label="Brazil">
+                        <option value="coffe">São Paulo</option>
+                        <option value="tea">Osasco</option>
+                        <option value="saque">Barueri</option>
+                    </optgroup>
+                </select>
+                <article>
+                    <label for="leng">English</label> 
+                    <input type="radio" name="season" id="eng" value="eng">
+                    <label for="season">Portuguese</label> 
+                    <input type="radio" name="season" id="pt" value="pt">
+                </article>
+                <textarea cols="30" rows="5" placeholder="Message..."></textarea>
+                <aside>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </aside>
+            </fieldset>
+        </form>
+    </main>
     <footer>
         Copyright &copy; Lucas Paglia 2022
     </footer>

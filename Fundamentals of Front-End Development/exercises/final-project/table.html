@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/table-style.css">
-    <title>Final Project - Form</title>
+    <title>Final Project - Table</title>
 </head>
 <body>
     <header>
@@ -15,10 +15,169 @@
         <ul>
             <li><a href="./index.html" target="_blank">Home</a></li>
             <li><a href="./about.html" target="_blank">About</a></li>
-            <li><a href="./table.html" target="_blank">Table</a></li>
+            <li><a href="./table.html" target="_blank" class="selected">Table</a></li>
             <li><a href="./contact.html" target="_blank">Contact</a></li>
         </ul>
     </nav>
+    <main>
+        <table>
+            <caption>Pokedex</caption>
+            <thead>
+                <tr>
+                    <th># Number</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Stage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>#001</td>
+                    <td>Bulbasaur</td>
+                    <td rowspan="3" class="glass">Glass</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#002</td>
+                    <td>Ivysaur</td>
+                    <td>Stage 1</td>
+                </tr>
+                <tr>
+                    <td>#003</td>
+                    <td>Venusaur</td>
+                    <td>Stage 2</td>
+                </tr>
+                <tr>
+                    <td>#004</td>
+                    <td>Charmander</td>
+                    <td rowspan="3" class="fire">Fire</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#005</td>
+                    <td>Charmeleon</td>
+                    <td>Stage 1</td>
+                </tr>
+                <tr>
+                    <td>#006</td>
+                    <td>Charizard</td>
+                    <td>Stage 2</td>
+                </tr>
+                <tr>
+                    <td>#007</td>
+                    <td>Squirtle</td>
+                    <td rowspan="3" class="water">Water</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#008</td>
+                    <td>Wartortle</td>
+                    <td>Stage 1</td>
+                </tr>
+                <tr>
+                    <td>#009</td>
+                    <td>Blastoise</td>
+                    <td>Stage 2</td>
+                </tr>
+                <tr>
+                    <td>#010</td>
+                    <td>Caterpie</td>
+                    <td rowspan="6" class="bug">Bug</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#011</td>
+                    <td>Metapod</td>
+                    <td>Stage 1</td>
+                </tr>
+                <tr>
+                    <td>#012</td>
+                    <td>Butterfree</td>
+                    <td>Stage 2</td>
+                </tr>
+                <tr>
+                    <td>#013</td>
+                    <td>Weedle</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#014</td>
+                    <td>Kakuna</td>
+                    <td>Stage 1</td>
+                </tr>
+                <tr>
+                    <td>#015</td>
+                    <td>Beedrill</td>
+                    <td>Stage 2</td>
+                </tr>
+                <tr>
+                    <td>#016</td>
+                    <td>Pidgey</td>
+                    <td rowspan="7" class="normal">Normal</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#017</td>
+                    <td>Pidgeotto</td>
+                    <td>Stage 1</td>
+                </tr>
+                <tr>
+                    <td>#018</td>
+                    <td>Pitgeot</td>
+                    <td>Stage 2</td>
+                </tr>
+                <tr>
+                    <td>#019</td>
+                    <td>Rattata</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#020</td>
+                    <td>Raticate</td>
+                    <td>Stage 1</td>
+                </tr>
+                <tr>
+                    <td>#021</td>
+                    <td>Spearow</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#022</td>
+                    <td>Fearow</td>
+                    <td>Stage 1</td>
+                </tr>
+                <tr>
+                    <td>#023</td>
+                    <td>Ekans</td>
+                    <td rowspan="2" class="psic">Poison</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#024</td>
+                    <td>Arbok</td>
+                    <td>Stage 1</td>
+                </tr>
+                <tr>
+                    <td>#025</td>
+                    <td>Pikachu</td>
+                    <td rowspan="2" class="eletric">Eletric</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>#026</td>
+                    <td>Raichu</td>
+                    <td>Stage 1</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4">
+                        Copyright &copy; <a href="https://www.pokemon.com/us/pokedex/">Pokemon Company</a>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
     <footer>
         Copyright &copy; Lucas Paglia 2022
     </footer>
