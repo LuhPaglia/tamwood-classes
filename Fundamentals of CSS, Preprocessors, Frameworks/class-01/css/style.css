@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-image: url("../img/header.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vh;
+}
+
+@media (min-width: 200px) {
+    nav{
+        background-color: black;
+        height: 10vh;
+    }
+    nav ul{
+        display: none;
+    }
+
+    main{
+        padding: 5% 5% 0% 5%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10vh;
+    }
+
+    main h1{
+        color: dimgray;
+        font-weight: 300;
+        font-size: 32px;
+        letter-spacing: 1;
+    }
+
+    main h2{
+        color: dimgray;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 1;
+    }
+
+    main p{
+        line-height: 2;
+        text-align: justify;
+    }
+
+    main > section{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+        padding: 10% 0%;
+    }
+
+    main > section > article{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        padding: 10% 0%;
+    }
+    
+    .first{
+        border-bottom: 2px solid dimgray;
+    }
+
+    .second, .fourth{
+        border-top: 2px solid dimgray;
+        border-bottom: 2px solid dimgray;
+    }
+
+    footer{
+        height: 15vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: dimgray;
+        line-height: 2;
+    }
+
+    footer a{
+        text-decoration: none;
+        color: dimgray;
+    }
+}
+
+@media (min-width: 600px) {
+
+    main h2{
+        font-size: 16px;
+        letter-spacing: 0vh;
+    }
+
+    main > section{
+        row-gap: 0vh;
+        padding: 0%;
+    }
+
+    footer{
+        padding: 0% 5%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .second, .fourth{
+        flex-direction: row;
+        column-gap: 3vh;
+    }
+    .second > article{
+        width: 50%;
+    }
+    .fourth > article{
+        width: 45%;
+    }
+}
+
+@media (min-width: 1000px) {
+    nav > ul{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2%;
+    }
+    nav li{
+        display: flex;
+    }
+
+    nav a{
+        color: white;
+    }
+
+    nav a:hover{
+        color: magenta;
+    }
+
+    main h2{
+        font-size: 28px;
+    }
+
+    main > section{
+        padding: 0%;
+    }
+}
