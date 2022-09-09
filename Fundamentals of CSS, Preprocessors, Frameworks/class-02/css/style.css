@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Quicksand', sans-serif;
+}
+
+body, main {
+   display: flex;
+   flex-direction: column;
+   row-gap: 10vh;
+}
+
+main > section {
+   padding-top: 10%;
+}
+
+@media (min-width: 200px) {
+
+   header {
+      background-image: url("/img/bg-headr.jpg");
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      height: 60vh;
+      border-radius: 0 0 15vh 15vh;
+   }
+
+   header > article {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(220, 30, 90, .8);
+      border-radius: 0 0 15vh 15vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+   }
+
+   header > article > article {
+      text-align: center;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 3vh;
+   }
+
+   header h1 {
+      font-size: 36px;
+   }
+
+   header a {
+      background-color: whitesmoke;
+      text-transform: capitalize;
+      color: #F55171;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 3%;
+      width: 20vh;
+   }
+
+   nav {
+      height: 5vh;
+      padding: 2%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      background-color: whitesmoke;
+      border-radius: 35px;
+      position: relative;
+   }
+
+   nav > aside {
+      display: flex;
+      align-items: center;
+      column-gap: 2vh;
+      width: 20%;
+      position: absolute;
+   }
+
+   nav > ul {
+      display: none;
+   }
+
+   nav > details {
+      position: absolute;
+      width: 95%;
+      text-align: right;
+      font-size: 20px;
+   }
+
+   details > ul {
+      margin-top: 4%;
+      background-color: whitesmoke;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+   }
+
+   details li {
+      display: flex;
+      width: 100%;
+   }
+
+   details a {
+      text-align: left;
+      width: 100%;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 1%;
+   }
+
+   footer {
+      padding: 15% 5% 5% 5%;
+      background-color: #111;
+      color: whitesmoke;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1vh;
+   }
+
+   footer h1 {
+      padding-bottom: 10%;
+   }
+
+   footer h2 {
+      color: #F55171;
+   }
+
+   footer p {
+      border-top: 1px solid whitesmoke;
+      padding-top: 2%;
+   }
+
+   .about,
+   .about > section,
+   .title-section,
+   .about > section > aside:last-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 5vh;
+   }
+
+   .about aside > p {
+      text-align: center;
+      line-height: 1.5;
+   }
+
+   .about > section > aside:first-child {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10vh;
+   }
+
+
+   .about a {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      padding: 4%;
+   }
+
+   .about img {
+      width: 40vh;
+      height: 40vh;
+      border-radius: 50%;
+      border: 10px solid #F55171;
+   }
+
+   .title-section > h2 {
+      border-bottom: 1px solid #F55171;
+      text-align: center;
+      font-size: 36px;
+      text-transform: capitalize;
+      width: 60%;
+      padding-bottom: 2%;
+   }
+
+   .title-section > p {
+      text-align: center;
+      line-height: 1.5;
+      padding: 1%;
+   }
+
+   .services {
+      padding: 2%;
+      padding-top: 10%;
+      padding-bottom: 10%;
+      background-color: #F55171;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 5vh;
+   }
+
+   .services > section,
+   .services > section > article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 5vh;
+      text-align: center;
+   }
+
+   .services div {
+      font-size: 60px;
+      border-radius: 50%;
+      width: 25vh;
+      height: 25vh;
+      border: 3px solid whitesmoke;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .services h2 {
+      font-size: 30px;
+      width: 100%;
+      border-bottom: 1px solid whitesmoke;
+   }
+
+   .services h3 {
+      text-transform: uppercase;
+      font-size: 20px;
+   }
+
+   .services a {
+      background-color: whitesmoke;
+      padding: 4%;
+      width: 20vh;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+   }
+
+   .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .contact > section {
+      width: 100%;
+   }
+
+   .contact form,
+   .contact aside {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      row-gap: 2vh;
+   }
+
+   .contact input {
+      width: 70%;
+      border: 2px solid #111;
+      padding: 5%;
+   }
+
+   .contact input::placeholder {
+      color: gray;
+      font-weight: 600;
+      font-size: 18px;
+   }
+
+   .contact [type="submit"] {
+      width: 30vh;
+      padding: 5%;
+      font-weight: 600;
+      border: 0px none transparent;
+      background-color: black;
+      color: white;
+      text-transform: capitalize;
+   }
+}
+
+@media (min-width: 600px) {
+
+   nav > details{
+      display: none;
+   }
+
+   nav > ul{
+      width: 100%;
+      display: flex;
+      list-style-type: none;
+      column-gap: 3vh;
+      justify-content: right;
+   }
+
+   ul a{
+      font-size: 20px;
+   }
+
+   .about{
+      padding: 3%;
+   }
+
+   .about > section > aside:first-child {
+      flex-direction: row;
+      column-gap: 5vh;
+   }
+   .about img{
+      width: 20vh;
+      height: 20vh;
+   }
+
+   .services > section{
+      flex-direction: row;
+   }
+
+   .services div {
+      width: 15vh;
+      height: 15vh;
+   }
+
+   .contact{
+      row-gap: 3vh;
+   }
+   .contact form > aside{
+      display: flex;
+      flex-direction: row;
+      column-gap: 5vh;
+   }
+
+   .contact input{
+      width: 30%;
+      padding: 3%;
+   }
+}
+
+@media (min-width: 1000px) {
+
+   .about > section > aside:first-child {
+      column-gap: 20vh;
+   }
+
+   .about img{
+      width: 40vh;
+      height: 40vh;
+   }
+
+   .about a, .services a, .contact [type="submit"] {
+      padding: 2%;
+   }
+
+   .services > section{
+      column-gap: 10vh;
+   }
+
+   .contact input{
+      width: 30%;
+      padding: 2%;
+   }
+
+}
