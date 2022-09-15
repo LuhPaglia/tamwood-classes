@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-
+/* MOBILE CSS */
 @media (min-width: 200px) {
 
     body{
@@ -190,6 +190,7 @@ html {
     }
 }
 
+/* TABLET VERSION */
 @media (min-width: 700px) {
     header{
         height: 20vh;
@@ -265,13 +266,14 @@ html {
     }
 }
 
+/* DESKTOP CSS */
 @media (min-width: 1000px){
     body{
         padding: 5%;
     }
     
     header{
-        height: 37vh;
+        height: 40vh;
         row-gap: 5vh;
     }
 
