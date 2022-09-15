@@ -1,15 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
-body{
-    background-color: purple;
-    padding: 7%;
+html {
+    scroll-behavior: smooth;
 }
+
 
 @media (min-width: 200px) {
+
+    body{
+        background-color: darkslateblue;
+        padding: 7%;
+    }
     nav{
         display: none;
     }
@@ -43,10 +50,6 @@ body{
         display: flex;
         flex-direction: column;
         row-gap: 5vh;
-    }
-    main img{
-        width: 100%;
-        height: 100%;
     }
 
     main p{
@@ -119,6 +122,10 @@ body{
         font-size: 18px;
     }
 
+    .projects img{
+        height: 40vh;
+    }
+
     .projects span{
         font-size: 14px;
         font-weight: 300;
@@ -176,14 +183,14 @@ body{
     }
 
     .contact [type="submit"]{
-        background-color: purple;
+        background-color: darkslateblue;
         border-radius: 50vh;
         width: 55%;
         color: white;
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     header{
         height: 20vh;
     }
@@ -228,6 +235,7 @@ body{
 
     .projects img{
         width: 25vh;
+        height: 25vh;
     }
 
     .work article, .education article{
@@ -254,5 +262,95 @@ body{
     .contact [type="submit"]{
         width: 30%;
         padding: 3%;
+    }
+}
+
+@media (min-width: 1000px){
+    body{
+        padding: 5%;
+    }
+    
+    header{
+        height: 37vh;
+        row-gap: 5vh;
+    }
+
+    nav{
+        display: block;
+        background-color: white;
+        width: 100%;
+        border-radius: 50vh;
+    }
+
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    nav li{
+        width: 100%;
+        display: flex;
+    }
+
+    nav a{
+        width: 100%;
+        color: black;
+        font-size: 16px;
+        padding: 5%;
+        text-align: center;
+    }
+
+    nav a:hover{
+        background-color: darkslateblue;
+        color: white;
+    }
+
+    main > section{
+        padding: 2%;
+        row-gap: 5vh;
+    }
+
+    .about > article{
+        justify-content: center;
+    }
+
+    .about aside{
+        width: 20%;
+        height: 30vh;
+
+    }
+    .about > article > article{
+        width: 60%;
+        row-gap: 2vh;
+        justify-content: center;
+    }
+
+    .education > article{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .social aside{
+        text-align: center;
+    }
+
+    .social a:hover{
+        color: darkslateblue;
+        border-color: darkslateblue;
+    }
+
+    .contact input, textarea{
+        width: 95%;
+        padding: 2%;
+    }
+
+    .contact [type="submit"]{
+        width: 20%;
+        padding: 1.5%;
+    }
+
+    footer{
+        padding: 2%;
     }
 }
