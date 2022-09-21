@@ -1,0 +1,319 @@
+@media (min-width: 200px){
+    header{
+        @include flexBox(column);
+        height: 60vh;
+        > article{
+            height: 100%;
+            padding: 5%;
+        }
+        nav{
+            height: 35vh;
+            text-align: right;
+            i{
+                font-size: 38px;
+            }
+            > ul{
+                display: none;
+            }
+            > details{
+                width: 100%;
+                summary{
+                    list-style: none;
+                }
+                ul{
+                    width: 100%;
+                }
+                ul li{
+                    display: flex;
+                    align-items: center;
+                    justify-content: right;
+                    border-bottom: 2px solid white;
+                    width: 100%;
+                }
+                ul a{
+                    color: white;
+                    font-weight: 300;
+                    text-decoration: none;
+                    padding: 2%;
+                }
+            }
+        }
+        section{
+            i{
+                font-size: 48px;
+            }
+        }
+    }
+
+    main{
+        padding: 15% 5% 15% 5%;
+        @include flexBox(column);
+        row-gap: 10vh;
+        
+        > section > article:first-child{
+            @include flexBox(column);
+            row-gap: 2vh;
+            text-align: center;
+            h2{
+                color: $greenColor;
+            }
+        }
+
+    }
+
+    .about{
+        @include flexBox(column);
+        row-gap: 5vh;
+        img{
+            width: 90%;
+            height: 55vh;
+        }
+        h3{
+            color: $h3about;
+        }
+        h4{
+            color: $h4about;
+        }
+
+        a{
+            color: dimgray;
+            font-size: 26px;
+            text-decoration: none;
+        }
+
+        figure{
+            @include flexBox(row);
+            justify-content: center;
+        }
+
+        > section, > section > article{
+            @include flexBox(column);
+            row-gap: 10vh;
+        }
+
+        aside > article{
+            @include flexBox(column);
+            row-gap: 2vh;
+        }
+
+        aside > article > aside:last-child{
+            @include flexBox(row);
+            column-gap: 2vh;
+        }
+    }
+
+    .features{
+        @include flexBox(column);
+        row-gap: 5vh;
+        > aside{
+            @include bgImg("../../img/feature.jpg");
+            height: 30vh;
+        }
+
+        > article{
+            @include flexBox(column);
+            row-gap: 10vh;
+        }
+
+        > article > aside{
+            @include flexBox(column);
+            align-items: center;
+            text-align: center;
+            row-gap: 5vh;
+            i{
+                font-size: 60px;
+                color: dimgray;
+            }
+            a{
+                padding: 4%;
+                text-decoration: none;
+                color: white;
+            }
+            .btnBlue{
+                background-color: $btnBlue;
+            }
+            .btnGreen{
+                background-color: $btnGreen;
+            }
+            .btnRed{
+                background-color: $btnRed;
+            }
+        }
+
+        > section{
+            @include flexBox(column);
+            row-gap: 2vh;
+            img{
+                width: 100%;
+                height: 30vh;
+            }
+            article{
+                @include flexBox(column);
+                row-gap: 2vh;
+                h3{
+                    color: $h3about;
+                    font-weight: 300;
+                }
+                p{
+                    line-height: 2;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+
+    .menu{
+        @include flexBox(column);
+        row-gap: 5vh;
+
+        h3{
+            color: $h3about;
+            font-weight: 300;
+        }
+
+        > aside{
+            @include flexBox(row);
+            column-gap: 3vh;
+            row-gap: 2vh;
+            flex-wrap: wrap;
+            justify-content: center;
+            a{
+                border: 1px solid $btnGreen;
+                color: $btnGreen;
+                width: 30%;
+                padding: 2%;
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+
+        > section{
+            @include flexBox(column);
+            align-items: center;
+            row-gap: 10vh;
+
+            figure{
+                @include flexBox(column);
+                align-items: center;
+                width: 80%;
+                row-gap: 5vh;
+                img{
+                    width: 100%;
+                    height: 40vh;
+                }
+                figcaption{
+                    @include flexBox(column);
+                    span{
+                        color: $greenColor;
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+
+        > div{
+            @include flexBox(column);
+            row-gap: 5vh;
+            font-weight: 300;
+
+            p{
+                color: dimgray;
+                line-height: 2;
+            }
+
+            > aside{
+                @include bgImg("../../img/avocado.jpg");
+                height: 25vh;
+            }
+            > article{
+                @include flexBox(column);
+                row-gap: 2vh;
+
+                > aside:first-child{
+                    @include flexBox(column);
+                    row-gap: 2vh;
+                    
+                }
+
+                >aside:last-child{
+                    @include flexBox(row);
+                    justify-content: right;
+                    a{
+                        border: 1px solid dimgray;
+                        color: dimgray;
+                        padding: 4%;
+                        text-align: center;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        @include flexBox(column);
+        row-gap: 5vh;
+        > section{
+            @include flexBox(column);
+            row-gap: 5vh;
+            > form{
+                @include flexBox(column);
+                row-gap: 5vh;
+                align-items:flex-end;
+                input, textarea{
+                    border: 0px solid transparent;
+                    border-bottom: 1px solid dimgray;
+                    padding: 2%;
+                    width: 100%;
+                }
+
+                [type="submit"]{
+                    background-color: $btnGreen;
+                    color: white;
+                    border: none;
+                    width: 30%;
+                }
+            }
+
+            > article{
+                @include flexBox(column);
+                row-gap: 4vh;
+                h3{
+                    color: $greenColor;
+                    font-weight: 300;
+                }
+                p{
+                    line-height: 2;
+                    color: dimgray;
+                }   
+                a{
+                    @include flexBox(row);
+                    column-gap: 2vh;
+                    text-decoration: none;
+                    color: dimgray;
+                    align-items: center;
+                    > i{
+                        color: $greenColor;
+                    }
+                }       
+
+                > aside{
+                    @include flexBox(row);
+                    column-gap: 4vh;
+                }
+                
+                > aside:last-child{
+                    font-size: 28px;
+                }
+                
+            }
+        }
+    }
+
+    .faq{
+        @include flexBox(column);
+        row-gap: 5vh;
+
+    }
+
+}
