@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     @include bgImg('../img/headerbg.jpg');
     color: white;

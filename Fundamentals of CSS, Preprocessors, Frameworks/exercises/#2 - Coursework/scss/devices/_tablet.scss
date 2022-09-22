@@ -1,0 +1,174 @@
+@media (min-width: 600px){
+    header{
+
+        height: 30vh;
+        > article{
+            @include flexBox(column);
+            justify-content: end;
+            position: relative;
+            > section{
+                position: absolute;
+                bottom: 2%;
+                width: 40%;
+            }
+        }
+
+        nav{
+            position: absolute;
+            height: 0;
+            width: 50%;
+            left: 45%;
+            details{
+                display: none;
+            }
+
+            > ul{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+    
+                li{
+                    display: flex;
+    
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        padding: 5%;
+        row-gap: 5vh;
+
+        > section > article:first-child{
+            align-items: center;
+            p{
+                width: 80%;
+            }
+        }
+    }
+
+    .about{
+        > section, > section > article{
+            row-gap: 5vh;
+        }
+        aside {
+            @include flexBox(row);
+            column-gap: 5vh;
+            img{
+                width: 20vh;
+                height: 25vh;
+            }
+
+            > article{
+                justify-content: center;
+                > aside:first-child{
+                    @include flexBox(column);
+                }
+            } 
+        }
+    }
+
+    .features{
+        > article{
+            row-gap: 3vh;
+
+            > aside{
+                row-gap: 3vh;
+                a{
+                    padding: 1%;
+                    width: 10vh;
+                }
+            }
+        }
+
+        > section{
+            @include flexBox(row);
+            column-gap: 2vh;
+            figure{
+                @include flexBox(column);
+                justify-content: center;
+            }
+            img{
+                width: 30vh;
+                height: 20vh;
+            }
+            article{
+                row-gap: 1vh;
+            }
+        }
+    }
+
+    .menu{
+        row-gap: 2vh;            
+        > aside{
+            @include flexBox(row);
+            row-gap: 2vh;
+            a{
+                width: 20%;
+                padding: 1%;
+            }
+        }
+
+        > section{
+            @include flexBox(row);
+            column-gap: 3vh;
+            flex-wrap: wrap;
+            row-gap: 0vh;
+            figure{
+                width: 30%;
+                height: 50vh;
+                img{
+                    width: 20vh;
+                    height: 20vh;
+                }
+            }
+
+            figcaption{
+                h3{
+                    font-size: 22px;
+                }
+            }
+        }
+        > div{
+            @include flexBox(row);
+            column-gap: 3vh;
+
+            > aside, > article{
+                width: 47%;
+            }
+        }
+    }
+
+    .contact{
+        > section{
+            @include flexBox(row);
+            column-gap: 5vh;
+
+            > form{
+                width: 47%;
+                row-gap: 2vh;
+            }
+
+            > article{
+                width: 47%;
+                row-gap: 2vh;
+                aside{
+                    @include flexBox(column);
+                    row-gap: 1vh;
+                }
+                > aside:last-child{
+                    @include flexBox(row);
+                    column-gap: 2vh;
+                }
+            }
+        }
+    }
+    .faq{
+        row-gap: 2vh;    
+    }
+}

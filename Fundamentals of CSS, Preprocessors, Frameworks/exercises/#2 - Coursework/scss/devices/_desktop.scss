@@ -1,0 +1,116 @@
+@media (min-width: 1000px){
+    header{
+        height: 50vh;
+
+        nav{
+            > ul{
+                justify-content: space-around;
+            }
+        }
+    }
+
+    main{
+        padding: 5% 2% 5% 2%;
+        row-gap: 10vh;
+        align-items: center;
+        > section > article:first-child{
+            p{
+                width: 50%;
+            }
+        }
+    }
+
+    .about{
+        > section > article{
+            @include flexBox(row);
+            column-gap: 5vh;
+            p{
+                width: 90%;
+                line-height: 2;
+            }
+            img{
+                width: 30vh;
+                height: 45vh;
+            }
+        }
+    }
+
+    .features{
+        row-gap: 10vh;
+        > article{
+            @include flexBox(row);
+            column-gap: 10vh;
+            > aside{
+                row-gap: 3vh;
+                p{
+                    width: 70%;
+                }
+                a{
+                    padding: 2%;
+                    width: 20vh;
+                }
+            }
+        }
+
+        > section{
+            column-gap: 10vh;
+            justify-content: center;
+            figure{
+                width: 40%;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            article{
+                width: 50%;
+                row-gap: 1vh;
+                justify-content: center;
+                p{
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    .menu{
+        row-gap: 10vh;
+        > section{
+            column-gap: 5vh;
+            row-gap: 5vh;
+            justify-content: center;
+            figure{
+                width: 20%;
+                height: 50vh;
+                img{
+                    width: 100%;
+                    height: 23vh;
+                }
+            }
+        }
+
+        > div{
+            justify-content: center;
+            > aside, > article{
+                height: 40vh;
+            }
+
+            > article{
+                width: 40%;
+                p{
+                    width: 90%;
+                }
+
+                >aside:last-child{
+                    a{
+                        padding: 2%;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact, .faq{
+        width: 70%;
+    }
+}
