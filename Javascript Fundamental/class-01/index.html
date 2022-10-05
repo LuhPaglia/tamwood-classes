@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Sample text</h1>
+</body>
+<script>
+    var userAge = 34;
+    var price = 150;
+    var finalPrice;
+    if(userAge < 18){
+        finalPrice = price - (price * 0.25);
+    }else if(userAge >= 18 && userAge < 25){
+        finalPrice = price - (price * 0.15);
+    }else if(userAge >= 25 && userAge < 35){
+        finalPrice = price - (price * 0.05);
+    }
+    else{
+        finalPrice = price;
+    }
+    document.getElementById("title").innerText = "Final Value: $" + finalPrice;
+</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var artType = "PS";
+    var output = "";
+    switch(artType){
+        case "PT":
+            output = "Painting";
+            break;
+        case "SC":
+            output = "Sculpture";
+            break;
+        default:
+            output = "Other";
+    }
+    console.log(output);
+
+    var actors = ["Marcelo", "Brad Pitt", "Leonardo DiCarpio", "Will Smith", "Tom Halks"];
+    console.log(actors);
+    var count = 0;
+    while(count < actors.length){
+        console.log(actors[count]);
+        count++;
+    }
+
+    let numbers = [20, 50, 2, 12, 85, 89, 67, 102, 1, 25];
+    var maxNumber = numbers[0];
+    var minNumber = numbers[0];
+    var sumNumbers = 0;
+    count = 0;
+    while(count<numbers.length){
+        maxNumber = (numbers[count] > maxNumber) ? numbers[count]: maxNumber;
+        minNumber = (numbers[count] < minNumber) ? numbers[count]: minNumber;
+        sumNumbers = sumNumbers + numbers[count];
+        count++;
+    }
+    console.log("Max Number: " + maxNumber + ";Min Number: " + minNumber +";Avg of numbers: " + (sumNumbers/numbers.length));
+</script>
+</html>
